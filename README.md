@@ -8,18 +8,23 @@ To write a program to predict the profit of a city using the linear regression m
 2. Anaconda – Python 3.7 Installation / Jupyter notebook
 
 ## Algorithm
-1. 
-2. 
-3. 
-4. 
+1.Load and preprocess the dataset by importing the required libraries, reading the CSV file, applying one-hot encoding to the categorical State column, and standardizing the input features and target values.
+
+2.Prepare the data for training by separating the independent features (X) and target variable (y), then adding a bias (intercept) column to the feature matrix.
+
+3.Train the Linear Regression model using Batch Gradient Descent by initializing the parameters, repeatedly updating them to minimize the Mean Squared Error (MSE) cost function, and plotting the cost convergence graph.
+
+4.Predict the profit for a new startup by preprocessing the new input in the same way as the training data, applying the learned parameters to make a prediction, and converting the predicted value back to the original scale.
+
 
 ## Program:
 ```
 /*
 Program to implement the linear regression using gradient descent.
 Developed by: HARSITA EASWARAN
-RegisterNumber:  24013629
+RegisterNumber:  212224220036
 */
+```
 ```
 import numpy as np 
 import pandas as pd 
@@ -48,11 +53,11 @@ prediction=np.dot(np. append(1, new_Scaled), theta)
 prediction=prediction.reshape(-1,1)
 pre=scaler. inverse_transform (prediction)
 print(f"Predicted value: {pre}")
+```
 
 ## Output:
-![linear regression using gradient descent](sam.png)
+<img width="1180" height="276" alt="image" src="https://github.com/user-attachments/assets/3e3983a8-46a4-4658-86b2-38294ec5f268" />
 
-![Screenshot 2024-11-24 121425](https://github.com/user-attachments/assets/a15cdd70-5599-4fc4-b7d1-8db26d905986)
 
 ## Result:
 Thus the program to implement the linear regression using gradient descent is written and verified using python programming.
